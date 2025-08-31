@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kendu Elements</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/ke_logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="tw-flex tw-font-mono tw-h-full tw-flex-col tw-bg-[#181B20] tw-text-white">
+      
+
+        <header
+            class="lg:tw-justify-around tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] 
+                    tw-text-white"
+        >
+            <a class="tw-mt-4 tw-h-[110px] tw-w-[110px] tw-p-[4px]" href="">
+                <img
+                    src="./assets/logo/ke_logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                </div>
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href="https://opensea.io/collection/kendu-elements/overview"
+                        aria-label="signup"
+                        class="btn-bg-blue tw-mt-4 tw-rounded-full tw-bg-secondary tw-px-4 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Mint</span>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-h-full hero-section tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="hero-bg-gradient tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] tw-pt-[0%] tw-mt-20 tw-pb-8 max-lg:tw-p-4  max-xl:tw-place-items-center"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="tw-text-center gradient-text tw-text-6xl tw-font-semibold tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Kendu Elements </span>
+                        <!--
+                        <br />
+                        <span class=""> </span>
+                    -->
+                    </div>
+                    <div
+                        class="tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full"
+                    >
+                        Kendu Elements celebrates the project’s reimagining after the community takeover in early 2025. Just 410 items will be available, with the majority of proceeds going directly to Kendu’s official treasury. Designed from the outset to be a community-run NFT project focused on long-term sustainability, below are some of the key aspects.
+                    </div>
+
+                    <div
+                        class="tw-mt-4 tw-mb-8 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2"
+                    >
+                        <a
+                            class="btn !tw-bg-white tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href="https://opensea.io/collection/kendu-elements/overview"
+                        >
+                            <span>Mint on OpenSea</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container">
+                    
+                    <div
+                        class="tw-flex tw-max-h-[591px] tw-w-full tw-max-w-[436px]
+                                    tw-overflow-hidden
+                                    max-lg:tw-max-h-[591px] max-lg:tw-w-[436px]"
+                    id="dashboard">
+                        <img
+                            src="./assets/images/ke_sample.png"
+                            alt="sample"
+                            class="tw-h-full tw-w-full tw-object-cover  max-lg:tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-h-full tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2 class="tw-text-4xl tw-font-semibold">Features</h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[60%] tw-flex-wrap tw-place-content-center tw-gap-2 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="tw-flex tw-h-full tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        
+                        
+                        <h3 class="tw-text-2xl tw-font-semibold">Meaningful art</h3>
+                        <div class="tw-text-gray-300">
+                            The "blueprint" theme is a reflection of Kendu still being at a nascent stage and very much an open canvas. Recognisable <i>elements</i> from the ecosystem (Kendu Energy, Coffee, murals etc.) were then individually added to each NFT.
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-full tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        
+                        
+                        <h3 class="tw-text-2xl tw-font-semibold">60% of every sale goes to the Kendu treasury</h3>
+                        <div class="tw-text-gray-300">
+                            In order to support the wider Kendu ecosystem, 60% of revenue is allocated to the official Kendu treasury. This occurs automatically during the minting process using audited smart contracts.
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-full tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        
+
+                        <h3 class="tw-text-2xl tw-font-semibold">Heavy discounts for existing Chad holders</h3>
+                        <div class="tw-text-gray-300">
+                            For a limited time, those that already hold Chads can mint at a 75% lower price over other wallets.
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-full tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        
+
+                        <h3 class="tw-text-2xl tw-font-semibold">Snapshot governance</h3>
+                        <div class="tw-text-gray-300">
+                            As a community-run NFT project, holders can participate in Snapshot voting to coordinate and steer its direction. Non-binding voting for general Kendu-related topics will also be carried out as a means to gauge community sentiment in the overall ecosystem. 
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-full tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        
+
+                        <h3 class="tw-text-2xl tw-font-semibold">Focused on long-term growth</h3>
+                        <div class="tw-text-gray-300">
+                            By building on a tried-and-true community foundation, where even the smallest holder can participate in meaningful decisions, the project will be in the best possible position for success over a long horizon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%] tw-pt-9 tw-pb-9"
+            id="pricing"
+        >
+            <h3
+                class="tw-text-3xl tw-font-medium text-blue max-md:tw-text-2xl"
+            >
+                Mint stages
+            </h3>
+            <!-- pricing -->
+            <div
+                class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+            >
+                <div
+                    class="tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-[2.7rem] tw-font-semibold">0.006 ETH</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        First stage for existing Kendu Chad holders
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>For a highly limited time, wallets that already hold Kendu Chads can mint at 75% off the regular price.</li>
+                    </ul>
+                    <a
+                        href="https://opensea.io/collection/kendu-elements/overview"
+                        class="btn-bg-blue btn-white-text tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Mint now
+                    </a>
+                </div>
+                <div
+                    class="tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-[2.7rem] tw-font-semibold">0.024 ETH</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        Public stage
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>Once the first stage is over, all other wallets are eligible to mint.</li>
+                    </ul>
+                    <a
+                        
+                        class="btn-bg-grey btn-white-text tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Starting soon
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-pt-20 tw-pb-20 tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src="./assets/logo/ke_logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-w-[120px]"
+                />
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Ecosystem</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="https://www.kendu.io/" class="footer-link">Kendu.io</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
